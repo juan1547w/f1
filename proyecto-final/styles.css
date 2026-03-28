@@ -1,0 +1,202 @@
+/* Variables de color F1 */
+:root {
+  --f1-red: #DC0000;
+  --f1-dark: #15151E;
+  --f1-light: #F5F5F5;
+  --f1-highlight: #00D4FF;
+  --accent-yellow: #FFD700;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B6B6B6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--f1-dark) !important;
+  border-bottom: 3px solid var(--f1-red);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: var(--f1-red) !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-primary) !important;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--f1-red);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover:after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--f1-red) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--f1-red);
+}
+
+
+
+/* HERO SECTION */
+.titulo {
+  background: linear-gradient(135deg, var(--f1-dark) 0%, #1a1a25 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+  border-bottom: 4px solid var(--f1-red);
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+.titulo h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--f1-red);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 4px 15px rgba(220, 0, 0, 0.3);
+}
+
+.titulo p {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+/* CONTENEDOR GENERAL */
+.container, .container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* SECCIONES */
+section {
+  padding: 4rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--f1-red);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: var(--f1-highlight);
+}
+
+h3 {
+  color: var(--f1-highlight);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* TARJETAS */
+.card {
+  background-color: #1f1f2e;
+  border: 1px solid rgba(220, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--f1-red);
+  box-shadow: 0 10px 30px rgba(220, 0, 0, 0.2);
+}
+
+.card-title {
+  color: var(--f1-red);
+  font-weight: 600;
+}
+
+.card-text {
+  color: var(--text-secondary);
+}
+
+/* BOTONES */
+.btn-primary {
+  background-color: var(--f1-red) !important;
+  border-color: var(--f1-red) !important;
+  color: white !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #a00000 !important;
+  box-shadow: 0 5px 20px rgba(220, 0, 0, 0.4);
+}
+
+/* TABLAS */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+thead {
+  background-color: var(--f1-red);
+}
+
+thead th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: white;
+}
+
+tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+}
+
+tbody tr:hover {
+  background-color: rgba(220, 0, 0, 0.1);
+}
+
+
+
+
+
